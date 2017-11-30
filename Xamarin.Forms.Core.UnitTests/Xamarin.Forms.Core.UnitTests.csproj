@@ -49,6 +49,9 @@
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
+    <Reference Include="Xamarin.Flex">
+      <HintPath>..\packages\Xamarin.Flex.0.1.252\lib\netstandard2.0\Xamarin.Flex.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Service Include="{82A7F48D-3B50-4B1E-B82E-3ADA8210C358}" />
@@ -185,6 +188,12 @@
     <Compile Include="StyleSheets\SelectorTests.cs" />
     <Compile Include="StyleSheets\IStylableTest.cs" />
     <Compile Include="StyleSheets\StyleTests.cs" />
+    <Compile Include="FlexLayoutTests.cs" />
+    <Compile Include="FlexLayoutAlignItemsTests.cs" />
+    <Compile Include="FlexLayoutFlexDirectionTests.cs" />
+    <Compile Include="FlexLayoutMarginTests.cs" />
+    <Compile Include="FlexLayoutAlignContentTests.cs" />
+    <Compile Include="FlexLayoutAlignSelfTests.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Xamarin.Forms.Core\Xamarin.Forms.Core.csproj">
@@ -220,4 +229,5 @@
   <ItemGroup>
     <Folder Include="StyleSheets\" />
   </ItemGroup>
+  <Import Project="..\packages\Xamarin.Flex.0.1.252\build\netstandard2.0\Xamarin.Flex.targets" Condition="Exists('..\packages\Xamarin.Flex.0.1.252\build\netstandard2.0\Xamarin.Flex.targets')" />
 </Project>
